@@ -1,0 +1,27 @@
+<p>addproducts works!</p>
+
+<form (ngSubmit)="getAddProducts()">
+    <div>
+        <label for="name">Name:</label>
+    <input type="text" name="name" [(ngModel)]="name" placeholder="Enter name" required autofocus>
+</div> 
+<div>
+    <label for="brand">Brand:</label>
+    <input type="brand" name="brand" [(ngModel)]="brand" placeholder="Enter brand" required > 
+</div>
+<div>
+    <label for="category">Category:</label>
+    <input type="category" name="category" [(ngModel)]="category" placeholder="Enter category" required> 
+</div>
+<div>
+    <label for="price">price:</label>
+    <input type="price" name="price" [(ngModel)]="price"  placeholder="Enter price" required > 
+</div>
+<div>
+    <label for="images">Images:</label>
+    <input type="images" name="images" [(ngModel)]="images"  placeholder="Enter images" required > 
+</div>
+    <button type="submit">
+        submit
+    </button>
+</form>
